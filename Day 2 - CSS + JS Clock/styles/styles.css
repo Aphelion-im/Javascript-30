@@ -1,0 +1,60 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  background: #018DED url("../images/jellyfish.jpg");
+  background-size: cover;
+}
+
+.clock {
+  border: 5px solid black;
+  width: 400px;
+  height: 400px;
+  border-radius: 50%;
+  margin: 48px auto 0 auto;
+  position: relative;
+  box-shadow:
+    0 0 0 4px rgba(0, 0, 0, 0.1),
+    inset 0 0 0 3px #EFEFEF,
+    inset 0 0 10px black,
+    0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.hoursHand {
+  background: #000;
+  border-radius: 50% 50% 0 0;
+  height: 20%;
+  left: 48.75%;
+  position: absolute;
+  top: 30%;
+  transform-origin: 50% 100%;
+  width: 2.5%;
+}
+
+.minutesHand {
+  background: #000;
+  border-radius: 50% 50% 0 0;
+  height: 40%;
+  left: 49%;
+  position: absolute;
+  top: 10%;
+  transform-origin: 50% 100%;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  width: 2%;
+}
+
+.secondsHand {
+  background: rgb(255, 0, 0);
+  border-radius: 50% 50% 0 0;
+  height: 45%;
+  left: 49.5%;
+  position: absolute;
+  top: 14%;
+  transform-origin: 50% 80%;
+  transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
+  width: 1%;
+  z-index: 8;
+}

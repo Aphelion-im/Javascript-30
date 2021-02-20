@@ -6,8 +6,8 @@
 
 :root {
   --base: #ffc600;
-  --blur: 10px;
   --spacing: 10px;
+  --blur: 10px;
 }
 
 img {
